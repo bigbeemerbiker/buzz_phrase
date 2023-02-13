@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "buzz phrase",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "BuzzNumberIntent",
+          "slots": [
+            {
+              "name": "three_digit_number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "using the number {three_digit_number}",
+            "with the number {three_digit_number}",
+            "the number {three_digit_number}",
+            "try the number {three_digit_number}",
+            "use the number {three_digit_number}",
+            "to run {three_digit_number}",
+            "to use {three_digit_number}",
+            "using {three_digit_number}",
+            "with {three_digit_number}",
+            "Give me {three_digit_number}",
+            "I want {three_digit_number}",
+            "try {three_digit_number}",
+            "use {three_digit_number}",
+            "{three_digit_number}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "1"
+}

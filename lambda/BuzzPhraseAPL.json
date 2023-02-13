@@ -1,0 +1,51 @@
+{
+  "type": "APL",
+  "version": "1.7",
+  "description": "A simple APL document.",
+  "settings": {},
+  "theme": "dark",
+  "import": [
+      {
+            "name": "alexa-layouts",
+            "version": "1.4.0"
+        }
+        ],
+  "resources": [
+      {
+            "description": "Colors dark to light",
+            "colors": {
+                "myBlack": "#343838",
+                "myPurple": "#9C0A54",
+                "myRed": "#FC2D47",
+                "myOrange": "#FD704B",
+                "myYellow": "#FDB04F",
+                "myWhite": "#FFFFFF"
+            }
+        }
+      ],
+  "styles": {},
+  "onMount": [],
+  "graphics": {},
+  "commands": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": [ "stuff" ],
+    "items": [
+        {
+                "type": "AlexaHeadline",
+                "id": "informationScreen0",
+                "backgroundColor": "@myPurple",
+                "__backgroundImageSource__": "${stuff.backgroundImage.url}",
+                "backgroundColorOverlay":"${stuff.backgroundImage.colorOverlay}",
+                "backgroundVideoSource": "${stuff.backgroundVideo.url}",
+                "backgroundVideoAutoPlay": true,
+                "backgroundVideoAudioTrack": "none",
+                "headerAttributionImage":"${stuff.logoUrl}",
+                "headerTitle": "${stuff.headerTitle}",
+                "primaryText": "${stuff.textContent.primaryText}",
+                "secondaryText": "${stuff.textContent.secondaryText}",
+                "footerHintText":"${stuff.textContent.hintText}"
+        }
+            ]
+  }
+}
